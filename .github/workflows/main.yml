@@ -20,6 +20,11 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-west-2'   # optional: defaults to us-east-1
         
-    - name: Copy files to the production website with the AWS CLI
+        
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Invalidate CloudFront Data
       run: aws cloudfront create-invalidation --distribution-id EPMOX4DSVEIUR --paths "/index.html"
 
