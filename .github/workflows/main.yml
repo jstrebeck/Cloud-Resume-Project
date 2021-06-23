@@ -9,7 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Update bucket
     - uses: actions/checkout@master
     - uses: jakejarvis/s3-sync-action@master
       with:
