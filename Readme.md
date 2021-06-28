@@ -1,6 +1,7 @@
 # Cloud Resume Project
 
-This project is intended to demonstrate all of my cloud skills and while also displaying my resume. This project also gave me a platfrom to practice some devops tools 
+The cloud resume challenge is a project to demonstrate cloud skills while also creating a showcase for your resume.  This project also gave me a platform to practice some DevOps tools. The inspiration and ideas are loosely based on the requirements of [the cloud resume project](https://forrestbrazeal.com/2020/04/23/the-cloud-resume-challenge/) written by Forrest Brazeal over on his site.
+
 
 This project includes the following technologies.
 * AWS S3
@@ -9,11 +10,9 @@ This project includes the following technologies.
 * Github Actions
 
 
-Azure has been connected to my DNS name
-
 ## Devops tools
 
-
+As I was creating the webpage and updating certain aspects it became increasingly inconvenient to push to Github, update files in S3, and invalidate data within the CloudFront cache. Github actions was chosen for this project since I was already pushing all my code there. Below is the workflow used when code is committed to this repository. 
 
 ```
 name: Upload Website
