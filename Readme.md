@@ -1,5 +1,7 @@
 # Cloud Resume Project
 
+You can see the final live version here: [strebeck.net](https://www.strebeck.net)
+
 The cloud resume challenge is a project to demonstrate cloud skills while also creating a showcase for your resume.  This project also gave me a platform to practice some DevOps tools. The inspiration and ideas are loosely based on the requirements of [the cloud resume project](https://forrestbrazeal.com/2020/04/23/the-cloud-resume-challenge/) written by Forrest Brazeal over on his site.
 
 
