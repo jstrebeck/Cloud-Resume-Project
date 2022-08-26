@@ -18,17 +18,16 @@ jQuery(document).ready(function( $ ) {
     interval: 3500
   });
 
-  // JavaScript Chart
   var doughnutData = [{
-      value: 70,
-      color: "#1abc9c"
-    },
-    {
-      value: 30,
-      color: "#ecf0f1"
-    }
+    value: 90,
+    color: "#1abc9c"
+  },
+  {
+    value: 15,
+    color: "#ecf0f1"
+  }
   ];
-  var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("Docker").getContext("2d")).Doughnut(doughnutData);
 
   // Bootstrap Chart
   var doughnutData = [{
@@ -40,23 +39,23 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("Linux").getContext("2d")).Doughnut(doughnutData);
 
   // WordPress Chart
   var doughnutData = [{
-    value: 65,
+    value: 90,
     color: "#1abc9c"
   },
   {
-    value: 35,
+    value: 15,
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("AWS").getContext("2d")).Doughnut(doughnutData);
 
   // HTML Chart
   var doughnutData = [{
-    value: 80,
+    value: 90,
     color: "#1abc9c"
   },
   {
@@ -64,7 +63,7 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("Azure").getContext("2d")).Doughnut(doughnutData);
 
   // Photoshop Chart
   var doughnutData = [{
@@ -76,19 +75,19 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("Python").getContext("2d")).Doughnut(doughnutData);
 
   // Illustrator Chart
   var doughnutData = [{
-    value: 50,
+    value: 80,
     color: "#1abc9c"
   },
   {
-    value: 50,
+    value: 15,
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("Networking").getContext("2d")).Doughnut(doughnutData);
 
 
   const countEl = document.getElementById('count');
