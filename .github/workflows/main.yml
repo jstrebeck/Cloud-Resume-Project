@@ -49,5 +49,5 @@ jobs:
     - name: Deploy to k8s
       uses: swdotcom/update-and-apply-kubernetes-configs@v1
       with:
-        k8-config-file-paths: k8/strebecknet.yaml
+        k8-config-file-paths: k8s/strebecknet.yaml
         replacement-method: defined
