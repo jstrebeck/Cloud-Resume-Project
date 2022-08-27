@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: strebeck
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: strebeck
+  template:
+    metadata:
+      labels:
+        app: strebeck
+    spec:
+      containers:
+      - name: strebeck
+        image: public.ecr.aws/c9v8v5y5/strebeck.net:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: strebeck
+spec:
+  type: LoadBalancer
+  selector:
+    app: strebeck
+  ports:
+  - port: 80
+    targetPort: 80

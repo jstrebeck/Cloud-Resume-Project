@@ -6,7 +6,7 @@ on:
     - main
 
 jobs:
-  build:
+  Build:
     name: Build Image
     runs-on: ubuntu-latest
    
@@ -38,3 +38,16 @@ jobs:
         docker push $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG
         docker tag $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$IMAGE_TAG $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:latest
         docker push $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:latest
+  Deploy:
+    name: Deploy to k8s
+    runs-on: self-hosted
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Deploy to k8s
+      uses: swdotcom/update-and-apply-kubernetes-configs@v1
+      with:
+        k8-config-file-paths: k8/strebecknet.yaml
+        replacement-method: defined
