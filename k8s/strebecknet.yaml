@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: strebeck
-        image: public.ecr.aws/c9v8v5y5/strebeck.net:latest
+        image: public.ecr.aws/c9v8v5y5/strebeck.net:${IMAGE_TAG}
         imagePullPolicy: Always
         resources:
           limits:

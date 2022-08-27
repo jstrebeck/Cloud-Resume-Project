@@ -51,3 +51,6 @@ jobs:
       uses: swdotcom/update-and-apply-kubernetes-configs@v1
       with:
         k8-config-file-paths: k8s/strebecknet.yaml
+        replacement-method: defined
+      env:
+        IMAGE_TAG: ${{ github.sha }}
