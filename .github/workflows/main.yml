@@ -41,6 +41,7 @@ jobs:
   Deploy:
     name: Deploy to k8s
     runs-on: self-hosted
+    needs: Build
 
     steps:
     - name: Check out code
