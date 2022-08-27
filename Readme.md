@@ -1,4 +1,5 @@
 # Cloud Resume Project
+[![Deploy to ECR](https://github.com/jstrebeck/Cloud-Resume-Project/actions/workflows/main.yml/badge.svg)](https://github.com/jstrebeck/Cloud-Resume-Project/actions/workflows/main.yml)
 
 You can see the final live version here: [strebeck.net](https://www.strebeck.net)
 
